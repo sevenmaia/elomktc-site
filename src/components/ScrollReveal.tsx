@@ -1,4 +1,3 @@
-"use strict";
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -16,30 +15,34 @@ export function ScrollReveal({
   className = "",
   animation = "fade-up",
   delay = 0,
-  duration = 650,
+  duration = 500,
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  // Default to visible on SSR and initial load so content is never blank
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    // If user prefers reduced motion, always stay visible
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setIsVisible(true);
+      return;
+    }
+
     const el = ref.current;
-    if (!el) return;
+    if (!el || typeof IntersectionObserver === "undefined") {
+      setIsVisible(true);
+      return;
+    }
 
-    // Check if element is already in viewport on mount
     const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight + 300) {
+    // If element is already in the viewport, keep visible immediately
+    if (rect.top < window.innerHeight) {
       setIsVisible(true);
+      return;
     }
 
-    // Safety fallback: ensure content is always visible after mount
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 900);
-
-    if (typeof IntersectionObserver === "undefined") {
-      setIsVisible(true);
-      return () => clearTimeout(timer);
-    }
+    // Only animate elements that are below the initial viewport fold
+    setIsVisible(false);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -50,30 +53,27 @@ export function ScrollReveal({
       },
       {
         threshold: 0.05,
-        rootMargin: "0px 0px 100px 0px",
+        rootMargin: "0px 0px 80px 0px",
       }
     );
 
     observer.observe(el);
-    return () => {
-      clearTimeout(timer);
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   const getTransform = () => {
     if (isVisible) return "translate3d(0, 0, 0) scale(1)";
     switch (animation) {
       case "fade-up":
-        return "translate3d(0, 32px, 0)";
+        return "translate3d(0, 24px, 0)";
       case "fade-down":
-        return "translate3d(0, -32px, 0)";
+        return "translate3d(0, -24px, 0)";
       case "fade-left":
-        return "translate3d(32px, 0, 0)";
+        return "translate3d(24px, 0, 0)";
       case "fade-right":
-        return "translate3d(-32px, 0, 0)";
+        return "translate3d(-24px, 0, 0)";
       case "zoom-in":
-        return "translate3d(0, 20px, 0) scale(0.96)";
+        return "translate3d(0, 16px, 0) scale(0.97)";
       case "fade":
       default:
         return "translate3d(0, 0, 0)";

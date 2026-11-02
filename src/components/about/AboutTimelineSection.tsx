@@ -1,5 +1,3 @@
-"use strict";
-
 import React from "react";
 import { Briefcase } from "lucide-react";
 import { ABOUT_CONTENT } from "@/content/about-content";

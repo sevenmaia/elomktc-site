@@ -1,5 +1,3 @@
-"use strict";
-
 import React from "react";
 import { Users, TrendingUp, Target, Star } from "lucide-react";
 import { ABOUT_CONTENT } from "@/content/about-content";

@@ -1,4 +1,3 @@
-"use strict";
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -17,7 +16,7 @@ function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
       aria-hidden="true"
       className={className}
     >
-      <path d="M228.1,41.1c60.9,0,68.1,0.2,92.2,1.3c22.2,1,34.3,4.7,42.4,7.9c10.6,4.1,18.2,9.1,26.2,17.1 c8,8,12.9,15.6,17.1,26.2c3.1,8,6.8,20.1,7.9,42.4c1.1,24.1,1.3,31.3,1.3,92.2c0,60.9-0.2,68.1-1.3,92.2c-1,22.2-4.7,34.3-7.9,42.4 c-4.1,10.6-9.1,18.2-17.1,26.2c-8,8-15.6,12.9-26.2,17.1c-8,3.1-20.1,6.8-42.4,7.9c-24.1,1.1-31.3,1.3-92.2,1.3 c-60.9,0-68.1-0.2-92.2-1.3c-22.2-1-34.3-4.7-42.4-7.9c-10.6-4.1-18.2-9.1-26.2-17.1c-8-8-12.9-15.6-17.1-26.2 c-3.1-8-6.8-20.1-7.9-42.4c-1.1-24.1-1.3-31.3-1.3-92.2c0-60.9,0.2-68.1,1.3-92.2c1-22.2,4.7-34.3,7.9-42.4 c4.1-10.6,9.1-18.2,17.1-26.2c8-8,15.6-12.9,26.2-17.1c8-3.1,20.1-6.8,42.4-7.9C160,41.3,167.2,41.1,228.1,41.1 M228.1,0 c-62,0-69.7,0.3-94.1,1.4c-24.3,1.1-40.9,5-55.4,10.6c-15,5.8-27.7,13.6-40.4,26.3C25.6,51,17.8,63.7,12,78.7 c-5.6,14.5-9.5,31.1-10.6,55.4C0.3,158.4,0,166.2,0,228.1c0,62,0.3,69.7,1.4,94.1c1.1,24.3,5,40.9,10.6,55.4 c5.8,15,13.6,27.7,26.3,40.4c12.7,12.7,25.4,20.5,40.4,26.3c14.5,5.6,31.1,9.5,55.4,10.6c24.3,1.1,32.1,1.4,94.1,1.4 c62,0,69.7-0.3,94.1-1.4c24.3-1.1,40.9-5,55.4-10.6c15-5.8,27.7-13.6,40.4-26.3c12.7-12.7,20.5-25.4,26.3-40.4 c5.6-14.5,9.5-31.1,10.6-55.4c1.1-24.3,1.4-32.1,1.4-94.1c0-62-0.3-69.7-1.4-94.1c-1.1-24.3-5-40.9-10.6-55.4 c-5.8-15-13.6-27.7-26.3-40.4c-12.7-12.7-25.4-20.5-40.4-26.3c-14.5-5.6-31.1-9.5-55.4-10.6C297.9,0.3,290.1,0,228.1,0" />
+      <path d="M228.1,41.1c60.9,0,68.1,0.2,92.2,1.3c22.2,1,34.3,4.7,42.4,7.9c10.6,4.1,18.2,9.1,26.2,17.1 c8,8,12.9,15.6,17.1,26.2c3.1,8,6.8,20.1,7.9,42.4c1.1,24.1,1.3,31.3,1.3,92.2c0,60.9-0.2,68.1-1.3,92.2c-1,22.2-4.7,34.3-7.9,42.4 c-4.1,10.6-9.1,18.2-17.1,26.2c-8,8-15.6,12.9-26.2,17.1c-8,3.1-20.1,6.8-42.4,7.9c-24.1,1.1-31.3,1.3-92.2,1.3 c-60.9,0-68.1-0.2-92.2-1.3c-22.2-1-34.3-4.7-42.4-7.9c-10.6-4.1-18.2-9.1-26.2-17.1c-8-8-12.9-15.6-17.1-26.2 c-3.1-8-6.8-20.1-7.9-42.4c-1.1-24.1-1.3-31.3-1.3-92.2c0-60.9,0.2-68.1,1.3-92.2c1-22.2,4.7-34.3,7.9-42.4 c4.1-10.6,9.1-18.2,17.1-26.2c8-8,15.6-12.9,26.2-17.1c8-3.1,20.1-6.8,42.4-7.9C160,41.3,167.2,41.1,228.1,41.1 M228.1,0 c-62,0-69.7,0.3-94.1,1.4c-24.3,1.1-40.9,5-55.4,10.6c-15,5.8-27.7,13.6-40.4,26.3C25.6,51,17.8,63.7,12,78.7 c-5.6,14.5-9.5,31.1-10.6,55.4C0.3,158.4,0,166.2,0,228.1c0,62,0.3,69.7,1.4,94.1c1.1,24.3,5,40.9,10.6,55.4 c5.8,15,13.6,27.7,26.3,40.4c12.7,12.7,20.5-25.4,26.3-40.4c14.5,5.6,31.1,9.5,55.4,10.6c24.3,1.1,32.1,1.4,94.1,1.4 c62,0,69.7-0.3,94.1-1.4c24.3-1.1,40.9-5,55.4-10.6c15-5.8,27.7-13.6,40.4-26.3c12.7-12.7,20.5-25.4,26.3-40.4 c5.6-14.5,9.5-31.1,10.6-55.4c1.1-24.3,1.4-32.1,1.4-94.1c0-62-0.3-69.7-1.4-94.1c-1.1-24.3-5-40.9-10.6-55.4 c-5.8-15-13.6-27.7-26.3-40.4c-12.7-12.7-25.4-20.5-40.4-26.3c-14.5-5.6-31.1-9.5-55.4-10.6C297.9,0.3,290.1,0,228.1,0" />
       <path d="M228.1,111C163.4,111,111,163.4,111,228.1c0,64.7,52.5,117.2,117.2,117.2c64.7,0,117.2-52.4,117.2-117.2 C345.3,163.4,292.8,111,228.1,111 M228.1,304.2c-42,0-76-34-76-76c0-42,34-76,76-76c42,0,76,34,76,76 C304.2,270.1,270.1,304.2,228.1,304.2" />
       <path d="M377.3,106.4c0,15.1-12.3,27.4-27.4,27.4c-15.1,0-27.4-12.3-27.4-27.4c0-15.1,12.3-27.4,27.4-27.4 C365,79,377.3,91.2,377.3,106.4" />
     </svg>
@@ -56,16 +55,24 @@ export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Dynamic theme adaptation: /videos has a dark #0A0910 hero background
-  const isDarkTheme = pathname === "/videos";
+  // Dynamic theme adaptation: /videos and project details have dark #0A0910 background
+  const isDarkTheme =
+    pathname === "/videos" || pathname.startsWith("/social-midia/projetos");
 
+  // Track scroll position for header glassmorphism effect
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Automatically close mobile menu whenever route changes
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   // Close mobile menu on Escape key
   useEffect(() => {
@@ -76,13 +83,16 @@ export function SiteHeader() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Prevent background scroll when mobile menu is open
+  // Prevent background scroll when mobile menu is open and safely restore
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [mobileMenuOpen]);
 
   // Hide public header on admin and bio pages
@@ -91,42 +101,177 @@ export function SiteHeader() {
   }
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-        scrolled
-          ? isDarkTheme
-            ? "bg-[#0A0910]/95 backdrop-blur-md shadow-sm border-b border-[#222030]/60 py-3"
-            : "bg-[#EBD2FA]/95 backdrop-blur-md shadow-sm border-b border-[#E0B8F5]/40 py-3"
-          : "bg-transparent py-5"
-      }`}
-    >
-      <div className="max-w-[1240px] mx-auto px-5 sm:px-8 flex items-center justify-between">
-        {/* Left side: Brand Logo + Desktop Navigation */}
-        <div className="flex items-center gap-6 lg:gap-9">
-          {/* Brand Logo & Name (visible on both Desktop and Mobile) */}
-          <Link
-            href="/"
-            className={`flex items-center gap-2.5 text-[17px] sm:text-[18px] font-heading font-black tracking-tight hover:opacity-90 transition-opacity flex-shrink-0 ${
-              isDarkTheme ? "text-white" : "text-[#14121E]"
-            }`}
-          >
-            <Image
-              src="/images/logo-icon.png"
-              alt="Logo Eloisa Cunha"
-              width={28}
-              height={28}
-              className="w-7 h-7 rounded-full object-contain shadow-xs"
-            />
-            <span>Eloisa Cunha</span>
-          </Link>
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${
+          scrolled
+            ? isDarkTheme
+              ? "bg-[#0A0910]/95 backdrop-blur-md shadow-sm border-b border-[#222030]/60 py-3"
+              : "bg-[#EBD2FA]/95 backdrop-blur-md shadow-sm border-b border-[#E0B8F5]/40 py-3"
+            : "bg-transparent py-4 sm:py-5"
+        }`}
+      >
+        <div className="max-w-[1240px] mx-auto px-5 sm:px-8 flex items-center justify-between">
+          {/* Left side: Brand Logo + Desktop Navigation */}
+          <div className="flex items-center gap-6 lg:gap-9">
+            {/* Brand Logo & Name */}
+            <Link
+              href="/"
+              className={`flex items-center gap-2.5 text-[17px] sm:text-[18px] font-heading font-black tracking-tight hover:opacity-90 transition-opacity flex-shrink-0 ${
+                isDarkTheme ? "text-white" : "text-[#14121E]"
+              }`}
+            >
+              <Image
+                src="/images/logo-icon.png"
+                alt="Logo Eloisa Cunha"
+                width={28}
+                height={28}
+                priority
+                className="w-7 h-7 rounded-full object-contain shadow-xs"
+              />
+              <span>Eloisa Cunha</span>
+            </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav
-            className={`hidden md:flex items-center gap-3.5 lg:gap-7 text-[13px] lg:text-[14px] font-semibold tracking-tight ${
-              isDarkTheme ? "text-white/80" : "text-[#1F1D2B]"
-            }`}
-            aria-label="Navegação principal"
-          >
+            {/* Desktop Navigation Links */}
+            <nav
+              className={`hidden md:flex items-center gap-3.5 lg:gap-7 text-[13px] lg:text-[14px] font-semibold tracking-tight ${
+                isDarkTheme ? "text-white/80" : "text-[#1F1D2B]"
+              }`}
+              aria-label="Navegação principal"
+            >
+              {HOME_CONTENT.header.navLinks.map((link) => {
+                const isActive =
+                  link.href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(link.href);
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`relative py-1 transition-colors duration-150 ${
+                      isActive
+                        ? isDarkTheme
+                          ? "text-white font-bold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#A40DDB] after:rounded-full"
+                          : "text-[#1F1D2B] font-bold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#A40DDB] after:rounded-full"
+                        : isDarkTheme
+                        ? "text-white/70 hover:text-[#C677E0]"
+                        : "text-[#3D3A49] hover:text-[#A40DDB]"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </nav>
+          </div>
+
+          {/* Right side: Real Social Icons (Desktop only) & CTA */}
+          <div className="flex items-center gap-2.5 sm:gap-6">
+            {/* Social icons: visible on lg screens and up */}
+            <div
+              className={`hidden lg:flex items-center gap-3 ${
+                isDarkTheme ? "text-white/80" : "text-[#1F1D2B]"
+              }`}
+            >
+              <a
+                href="https://www.instagram.com/elo.mktc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de Eloisa Cunha"
+                className={`p-1.5 rounded-full hover:text-[#A40DDB] transition-colors ${
+                  isDarkTheme ? "hover:bg-white/10" : "hover:bg-[#A40DDB]/10"
+                }`}
+              >
+                <InstagramIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@elo.mktc"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok de Eloisa Cunha"
+                className={`p-1.5 rounded-full hover:text-[#A40DDB] transition-colors ${
+                  isDarkTheme ? "hover:bg-white/10" : "hover:bg-[#A40DDB]/10"
+                }`}
+              >
+                <TikTokIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+              <a
+                href="http://www.linkedin.com/in/elo%C3%ADsa-cunha"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn de Eloisa Cunha"
+                className={`p-1.5 rounded-full hover:text-[#A40DDB] transition-colors ${
+                  isDarkTheme ? "hover:bg-white/10" : "hover:bg-[#A40DDB]/10"
+                }`}
+              >
+                <LinkedInIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+            </div>
+
+            {/* CTA Button */}
+            <Link
+              href="/orcamento"
+              className="hidden sm:inline-flex items-center gap-1.5 bg-[#A40DDB] hover:bg-[#8F08C0] active:scale-[0.98] text-white text-[13px] sm:text-[14px] font-bold px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition-all shadow-sm group"
+            >
+              <span>Fale comigo</span>
+              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+            </Link>
+
+            {/* Hamburger toggle button for mobile */}
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(true)}
+              className={`md:hidden p-2 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A40DDB] transition-colors ${
+                isDarkTheme
+                  ? "text-white bg-white/10 hover:bg-white/20"
+                  : "text-[#14121E] bg-[#14121E]/5 hover:bg-[#14121E]/10"
+              }`}
+              aria-label="Abrir menu de navegação"
+              aria-expanded={mobileMenuOpen}
+            >
+              <Menu className="w-6 h-6 stroke-[2.2]" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Mobile Drawer Menu: 100% Solid Full-Screen Viewport */}
+      {mobileMenuOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu móvel de navegação"
+          className="md:hidden fixed inset-0 z-[100] bg-[#0A0910] text-white flex flex-col justify-between overflow-y-auto"
+        >
+          {/* Top Header Bar of Drawer */}
+          <div className="flex items-center justify-between px-5 sm:px-8 py-4 border-b border-[#222030] flex-shrink-0 bg-[#0A0910]">
+            <Link
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2.5 text-[18px] font-heading font-black tracking-tight text-white"
+            >
+              <Image
+                src="/images/logo-icon.png"
+                alt="Logo Eloisa Cunha"
+                width={28}
+                height={28}
+                className="w-7 h-7 rounded-full object-contain"
+              />
+              <span>Eloisa Cunha</span>
+            </Link>
+
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(false)}
+              className="p-2 rounded-xl text-white hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A40DDB] transition-colors"
+              aria-label="Fechar menu"
+            >
+              <X className="w-6 h-6 text-white stroke-[2.2]" />
+            </button>
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="flex flex-col px-6 py-6 gap-2 flex-1 bg-[#0A0910]">
             {HOME_CONTENT.header.navLinks.map((link) => {
               const isActive =
                 link.href === "/"
@@ -136,169 +281,62 @@ export function SiteHeader() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative py-1 transition-colors duration-150 ${
-                    isActive
-                      ? isDarkTheme
-                        ? "text-white font-bold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#A40DDB] after:rounded-full"
-                        : "text-[#1F1D2B] font-bold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#A40DDB] after:rounded-full"
-                      : isDarkTheme
-                      ? "text-white/70 hover:text-[#C677E0]"
-                      : "text-[#3D3A49] hover:text-[#A40DDB]"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </nav>
-        </div>
-
-        {/* Right side: Real Social Icons (Desktop only) & CTA */}
-        <div className="flex items-center gap-2.5 sm:gap-6">
-          {/* Social icons: visible on lg screens and up to give space on tablet */}
-          <div className={`hidden lg:flex items-center gap-3 ${isDarkTheme ? "text-white/80" : "text-[#1F1D2B]"}`}>
-            <a
-              href="https://www.instagram.com/elo.mktc/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram de Eloisa Cunha"
-              className={`p-1.5 rounded-full hover:text-[#A40DDB] transition-colors ${
-                isDarkTheme ? "hover:bg-white/10" : "hover:bg-[#A40DDB]/10"
-              }`}
-            >
-              <InstagramIcon className="w-4 h-4 sm:w-5 sm:h-5" />
-            </a>
-            <a
-              href="https://www.tiktok.com/@elo.mktc"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="TikTok de Eloisa Cunha"
-              className={`p-1.5 rounded-full hover:text-[#A40DDB] transition-colors ${
-                isDarkTheme ? "hover:bg-white/10" : "hover:bg-[#A40DDB]/10"
-              }`}
-            >
-              <TikTokIcon className="w-4 h-4 sm:w-5 sm:h-5" />
-            </a>
-            <a
-              href="http://www.linkedin.com/in/elo%C3%ADsa-cunha"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn de Eloisa Cunha"
-              className={`p-1.5 rounded-full hover:text-[#A40DDB] transition-colors ${
-                isDarkTheme ? "hover:bg-white/10" : "hover:bg-[#A40DDB]/10"
-              }`}
-            >
-              <LinkedInIcon className="w-4 h-4 sm:w-5 sm:h-5" />
-            </a>
-          </div>
-
-          {/* CTA Button */}
-          <Link
-            href="/orcamento"
-            className="hidden sm:inline-flex items-center gap-1.5 bg-[#A40DDB] hover:bg-[#8F08C0] active:scale-[0.98] text-white text-[13px] sm:text-[14px] font-bold px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition-all shadow-sm group"
-          >
-            <span>Fale comigo</span>
-            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
-          </Link>
-
-          {/* Hamburger toggle for mobile */}
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`md:hidden p-1.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A40DDB] ${
-              isDarkTheme
-                ? "text-white hover:bg-white/10"
-                : "text-[#1F1D2B] hover:bg-[#A40DDB]/10"
-            }`}
-            aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
-            aria-expanded={mobileMenuOpen}
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Drawer Menu */}
-      {mobileMenuOpen && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-label="Menu móvel"
-          className="md:hidden fixed inset-0 top-[60px] bg-[#0B0B0F]/95 backdrop-blur-xl z-40 p-6 flex flex-col justify-between"
-        >
-          <div>
-            <div className="flex items-center gap-2.5 pb-4 mb-2 border-b border-[#2C2932]">
-              <Image
-                src="/images/logo-icon.png"
-                alt="Logo Eloisa Cunha"
-                width={28}
-                height={28}
-                className="w-7 h-7 rounded-full object-contain"
-              />
-              <span className="text-[18px] font-heading font-black text-white tracking-tight">
-                Eloisa Cunha
-              </span>
-            </div>
-
-            <nav className="flex flex-col gap-3 pt-2">
-              {HOME_CONTENT.header.navLinks.map((link) => {
-              const isActive =
-                link.href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(link.href);
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`text-2xl font-black py-2.5 border-b border-[#2C2932] tracking-tight transition-colors ${
-                    isActive ? "text-[#C677E0]" : "text-white hover:text-[#EBD2FA]"
+                  className={`text-xl font-heading font-black py-3.5 px-3 rounded-xl border-b border-[#1E1B29] tracking-tight transition-all flex items-center justify-between ${
+                    isActive
+                      ? "text-[#C677E0] bg-white/5"
+                      : "text-white hover:text-[#C677E0] hover:bg-white/5"
                   }`}
                 >
-                  {link.label}
+                  <span>{link.label}</span>
+                  <ArrowRight className="w-4 h-4 text-white/40" />
                 </Link>
               );
             })}
           </nav>
-        </div>
 
-          <div className="pt-6 border-t border-[#2C2932] flex flex-col gap-4">
+          {/* Bottom Actions & Socials */}
+          <div className="p-6 border-t border-[#222030] flex flex-col gap-4 flex-shrink-0 bg-[#0A0910]">
             <Link
               href="/orcamento"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3.5 bg-[#A40DDB] text-white font-bold rounded-lg text-base"
+              className="w-full text-center py-4 bg-gradient-to-r from-[#9400D3] via-[#AF00DB] to-[#D444BC] hover:opacity-95 text-white font-heading font-bold rounded-xl text-base shadow-lg shadow-purple-900/30 transition-transform active:scale-[0.98]"
             >
               Fale comigo no WhatsApp
             </Link>
-            <div className="flex justify-center gap-6 pt-2 text-white/70">
+
+            <div className="flex justify-center items-center gap-5 pt-1 text-white/70">
               <a
                 href="https://www.instagram.com/elo.mktc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
+                className="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-white hover:text-[#D444BC] transition-all"
               >
-                <InstagramIcon className="w-6 h-6" />
+                <InstagramIcon className="w-4 h-4" />
               </a>
               <a
                 href="https://www.tiktok.com/@elo.mktc"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
+                className="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-white hover:text-[#D444BC] transition-all"
               >
-                <TikTokIcon className="w-6 h-6" />
+                <TikTokIcon className="w-4 h-4" />
               </a>
               <a
                 href="http://www.linkedin.com/in/elo%C3%ADsa-cunha"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                className="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-white hover:text-[#D444BC] transition-all"
               >
-                <LinkedInIcon className="w-6 h-6" />
+                <LinkedInIcon className="w-4 h-4" />
               </a>
             </div>
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
