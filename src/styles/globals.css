@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink: #0B0B0F;
+  --color-ink-soft: #1B1B20;
+  --color-primary: #A40DDB;
+  --color-primary-hover: #8F08C0;
+  --color-magenta: #C013B9;
+  --color-lavender: #C677E0;
+  --color-lavender-soft: #EBD2FA;
+  --color-lavender-light: #F6E7FF;
+  --color-lilac-50: #F8F2FD;
+  --color-white: #FFFFFF;
+  --color-muted: #646475;
+  --color-border: #E9E2EE;
+  --color-dark-border: #2C2932;
+  --radius-sm: 8px;
+  --radius-card: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  --content-max: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-inter), sans-serif;
+  color: var(--color-ink);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: clip;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom focus ring */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Infinite marquee animation for mobile tools bar */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 16s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

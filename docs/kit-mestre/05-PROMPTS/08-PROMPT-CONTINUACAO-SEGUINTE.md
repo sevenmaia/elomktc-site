@@ -1,0 +1,3 @@
+# PROMPT CURTO DE CONTINUAÇÃO — Uma sprint por vez
+
+Continue o projeto ELOMKT C de onde a última sprint terminou. Antes de editar, leia `05-PROMPTS/00-PROMPT-MESTRE-GLOBAL.md`, o último relatório de implementação e a especificação da próxima página. **Não altere páginas já aprovadas nem o Design System sem necessidade documentada.** Execute apenas a próxima etapa do roadmap, com UI consistente, funcionalidade real, estados vazios/erros, SEO, responsividade, testes e screenshot comparativo. Ao final liste arquivos alterados, verificações efetivamente executadas e pendências; não avance automaticamente para a sprint seguinte.

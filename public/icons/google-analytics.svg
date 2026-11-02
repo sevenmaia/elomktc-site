@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 28" fill="none">
+  <g transform="translate(4, 5)">
+    <rect x="0" y="10" width="4" height="8" rx="2" fill="#F9AB00"/>
+    <rect x="7" y="5" width="4" height="13" rx="2" fill="#E37400"/>
+    <rect x="14" y="0" width="4" height="18" rx="2" fill="#E37400"/>
+  </g>
+  <text x="28" y="14" font-family="Inter, sans-serif" font-weight="600" font-size="10" fill="#E37400">Google</text>
+  <text x="28" y="23" font-family="Inter, sans-serif" font-weight="500" font-size="9" fill="#5F6368">Analytics</text>
+</svg>

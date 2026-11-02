@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lead_1793570916789_dl9pt",
+    "protocol": "ELO-9261",
+    "createdAt": "2026-11-01T22:08:36.789Z",
+    "status": "novo",
+    "name": "Carlos Oliveira",
+    "whatsapp": "11987654321",
+    "normalizedWhatsapp": "5511987654321",
+    "email": "carlos@exemplo.com.br",
+    "company": "Oliveira Consultoria",
+    "services": [
+      "Social Media",
+      "Sites e Landing Pages"
+    ],
+    "objective": "Reformular nossa presença digital e criar landing page com foco em captação de clientes.",
+    "deadline": "15 a 30 dias",
+    "budget": "R$ 5.000 a R$ 10.000",
+    "source": "Instagram",
+    "consent": true,
+    "consentTimestamp": "2026-11-01T22:08:36.789Z",
+    "consentVersion": "v1.0",
+    "utm": {},
+    "referrer": ""
+  }
+]

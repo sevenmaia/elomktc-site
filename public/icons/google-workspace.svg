@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 28" fill="none">
+  <g transform="translate(4, 4)">
+    <rect x="0" y="0" width="9" height="9" rx="1.5" fill="#4285F4"/>
+    <rect x="11" y="0" width="9" height="9" rx="1.5" fill="#EA4335"/>
+    <rect x="0" y="11" width="9" height="9" rx="1.5" fill="#FBBC05"/>
+    <rect x="11" y="11" width="9" height="9" rx="1.5" fill="#34A853"/>
+  </g>
+  <text x="32" y="14" font-family="Inter, sans-serif" font-weight="600" font-size="10" fill="#4285F4">Google</text>
+  <text x="32" y="23" font-family="Inter, sans-serif" font-weight="500" font-size="9" fill="#5F6368">Workspace</text>
+</svg>

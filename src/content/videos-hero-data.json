@@ -1,0 +1,62 @@
+{
+  "published": {
+    "vertical": {
+      "id": "vertical",
+      "format": "vertical",
+      "title": "Posicionamento Estratégico",
+      "caption": "o posicionamento de marca é o que diferencia você",
+      "duration": "00:45",
+      "videoUrl": "/videos/hero-sample-vertical.mp4",
+      "posterUrl": "/images/videos/hero-vertical-poster.webp",
+      "altText": "Vídeo vertical: Posicionamento estratégico de marca",
+      "isPublished": true,
+      "publishedAt": "2026-10-31T22:26:26.480Z",
+      "updatedAt": "2026-10-31T22:26:26.480Z"
+    },
+    "horizontal": {
+      "id": "horizontal",
+      "format": "horizontal",
+      "title": "Painel: Inovação e Mercado",
+      "speakerOrTag": "Bruno Quant",
+      "caption": "Debate com líderes sobre tendências e futuro do marketing",
+      "duration": "01:32",
+      "videoUrl": "/videos/hero-sample-horizontal.webm",
+      "posterUrl": "/images/videos/hero-horizontal-poster.webp",
+      "altText": "Vídeo horizontal: Painel com Bruno Quant sobre tendências",
+      "isPublished": true,
+      "publishedAt": "2026-10-31T22:26:26.480Z",
+      "updatedAt": "2026-10-31T22:26:26.480Z"
+    }
+  },
+  "draft": {
+    "vertical": {
+      "id": "vertical",
+      "format": "vertical",
+      "title": "Posicionamento Estratégico",
+      "caption": "o posicionamento de marca é o que diferencia você",
+      "duration": "00:45",
+      "videoUrl": "/videos/hero-sample-vertical.mp4",
+      "posterUrl": "/images/videos/hero-vertical-poster.webp",
+      "altText": "Vídeo vertical: Posicionamento estratégico de marca",
+      "isPublished": true,
+      "publishedAt": "2026-10-31T22:26:26.480Z",
+      "updatedAt": "2026-10-31T22:26:26.480Z"
+    },
+    "horizontal": {
+      "id": "horizontal",
+      "format": "horizontal",
+      "title": "Painel: Inovação e Mercado",
+      "speakerOrTag": "Bruno Quant",
+      "caption": "Debate com líderes sobre tendências e futuro do marketing",
+      "duration": "01:32",
+      "videoUrl": "/videos/hero-sample-horizontal.webm",
+      "posterUrl": "/images/videos/hero-horizontal-poster.webp",
+      "altText": "Vídeo horizontal: Painel com Bruno Quant sobre tendências",
+      "isPublished": true,
+      "publishedAt": "2026-10-31T22:26:26.480Z",
+      "updatedAt": "2026-10-31T22:26:26.480Z"
+    }
+  },
+  "hasUnpublishedChanges": false,
+  "lastPublishedAt": "2026-10-31T22:26:26.480Z"
+}

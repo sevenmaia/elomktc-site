@@ -1,0 +1,23 @@
+{
+  "name": "AVSM Creative Suite",
+  "version": "2.0.0",
+  "skills": [
+    "avsm-master",
+    "avsm-lp",
+    "avsm-web-pro",
+    "avsm-design-pro",
+    "avsm-flow",
+    "avsm-copy",
+    "avsm-motion",
+    "avsm-3d",
+    "avsm-library-scout",
+    "avsm-performance",
+    "avsm-token-saver"
+  ],
+  "shared_references": [
+    "_shared/avsm-quality-bar.md",
+    "_shared/avsm-design-system.md",
+    "_shared/library-catalog.md",
+    "_shared/vendor-agent-skills.md"
+  ]
+}
